@@ -1,0 +1,102 @@
+﻿http://www.pm25.in/api/querys/pm2_5.json?city=zhuhai&token=5A8qhLa16LvavqY1LUjb
+
+
+
+http://www.pm25.in/api/querys/all_cities.json?token=5A8qhLa16LvavqY1LUjb
+
+
+http://www.pm25.in/api/querys/aqi_ranking.json?token=5A8qhLa16LvavqY1LUjb
+
+
+
+
+
+{"aqi":0,"area":"太原","co":0.0,"co_24h":0.0,"no2":0,"no2_24h":0,"o3":0,"o3_24h":0,"o3_8h":0,"o3_8h_24h":0,"pm10":0,"pm10_24h":0,"pm2_5":0,"pm2_5_24h":0,"position_name":"涧河","primary_pollutant":null,"quality":null,"so2":0,"so2_24h":0,"station_code":"1082A","time_point":"2016-03-03T10:00:00Z"}
+
+
+{"aqi":70,"area":"长春","co":0.997,"co_24h":1.16,"no2":58,"no2_24h":64,"o3":26,"o3_24h":50,"o3_8h":16,"o3_8h_24h":38,"pm10":64,"pm10_24h":92,"pm2_5":51,"pm2_5_24h":69,"position_name":"园林处","primary_pollutant":"细颗粒物(PM2.5)","quality":"良","so2":57,"so2_24h":61,"station_code":"1123A","time_point":"2016-03-03T10:00:00Z"}
+
+{"aqi":48,"area":"长春","co":0.541,"co_24h":0.741,"no2":7,"no2_24h":24,"o3":96,"o3_24h":96,"o3_8h":70,"o3_8h_24h":74,"pm10":48,"pm10_24h":76,"pm2_5":27,"pm2_5_24h":45,"position_name":"净月潭","primary_pollutant":null,"quality":"优","so2":15,"so2_24h":18,"station_code":"1124A","time_point":"2016-03-03T14:00:00Z"}
+
+{"aqi":89,"area":"牡丹江","co":0.652,"co_24h":0.74,"no2":17,"no2_24h":25,"o3":83,"o3_24h":96,"o3_8h":80,"o3_8h_24h":92,"pm10":0,"pm10_24h":65,"pm2_5":66,"pm2_5_24h":58,"position_name":"第一中学","primary_pollutant":"细颗粒物(PM2.5)","quality":"良","so2":14,"so2_24h":27,"station_code":"1788A","time_point":"2016-03-03T22:00:00Z"}
+
+pm2_5 1164
+primary_pollutant 细颗粒物(PM2.5)
+co 1.36
+pm10 219
+area 湖州
+o3_8h 143
+o3 47
+o3_24h 198
+station_code 2907A
+quality 中度污染
+co_24h 1.335
+no2_24h 100
+so2 46
+so2_24h 70
+time_point 2016-03-03T19:00:00Z
+pm2_5_24h 108
+position_name 吴兴区站
+o3_8h_24h 145
+aqi 152
+pm10_24h 227
+no2 220
+
+
+
+       self.aqi = aqi
+        self.area = area
+        self.co = co
+        self.co_24h = co_24h
+        self.no2 = no2
+        self.no2_24h = no2_24h
+        self.o3 = o3
+        self.o3_24h = o3_24h
+        self.o3_8h = o3_8h
+        self.o3_8h_24h = o3_8h_24h
+        self.pm10 = pm10
+        self.pm10_24h = pm10_24h
+        self.pm2_5 = pm2_5
+        self.pm2_5_24h = pm2_5_24h
+        self.position_name = position_name
+        self.primary_pollutant = primary_pollutant
+        self.quality = quality
+        self.so2 = so2
+        self.so2_24h = so2_24h
+        self.station_code = station_code
+        self.time_point = time_point
+		
+	aqi VARCHAR(200) NULL COMMENT '',
+	  area VARCHAR(45) NULL COMMENT '',
+	  co VARCHAR(45) NULL COMMENT '',
+	  co_24h VARCHAR(200) NULL COMMENT '',
+	  no2 VARCHAR(45) NULL COMMENT '',
+	  no2_24h VARCHAR(45) NULL COMMENT '',
+	  o3 VARCHAR(200) NULL COMMENT '',
+	  o3_24h VARCHAR(45) NULL COMMENT '',
+	  o3_8h VARCHAR(45) NULL COMMENT '',
+	  o3_8h_24h VARCHAR(200) NULL COMMENT '',
+	  pm10 VARCHAR(45) NULL COMMENT '',
+	  pm10_24h VARCHAR(45) NULL COMMENT '',
+	  pm2_5 VARCHAR(200) NULL COMMENT '',
+	  pm2_5_24h VARCHAR(45) NULL COMMENT '',
+	  position_name VARCHAR(45) NULL COMMENT '',
+	  primary_pollutant VARCHAR(200) NULL COMMENT '',
+	  quality VARCHAR(45) NULL COMMENT '',
+	  so2 VARCHAR(45) NULL COMMENT '',
+	  so2_24h VARCHAR(200) NULL COMMENT '',
+	  station_code VARCHAR(200) NULL COMMENT '',
+	  time_point VARCHAR(200) NULL COMMENT '',
+	  
+	  
+	  
+	  Mysql Execute Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':00:00Z)' at line 4
+
+	  
+	  
+	  
+	  
+	  
+	  SELECT time_point from table33 where test_info_id = (SELECT max(test_info_id) FROM table33);
+	  
+	  
