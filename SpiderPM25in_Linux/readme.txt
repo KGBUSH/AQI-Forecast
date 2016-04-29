@@ -18,9 +18,11 @@ SpiderPm25in_key.py:
 
 API返回的并不是一个严格的json，而是一个list：API返回的并不是一个严格的json，而是一个list：[{},{},{},{}],每一个字典是一个监测点的数据。
 
+DrawCityPm25.py是画图代码
+
+/Forecast:
+这个模块是预测分析模块
 
 
 
 
-
-目前用到的就是这个三个.py,其他都没用。运行的话，先运行PmMySQL.py，里面有个main函数式建表。然后运行SpiderPm25in_key.py：爬取数据，存入数据库。
